@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>שכתוב משפטי בעברית גבוהה</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>שכתוב משפטי בעברית גבוהה</h1>
+      <p class="subtitle">הדבק משפט, לחץ "שכתב", וקבל ניסוח עברי-משפטי ומוקפד.</p>
+
+      <label for="inputText" class="label">המשפט שלך</label>
+      <textarea id="inputText" class="textarea" rows="5" placeholder="לדוגמה: אני רוצה לבטל את העסקה כי המוצר הגיע פגום."></textarea>
+
+      <div class="row">
+        <button id="rewriteBtn" class="button">שכתב</button>
+        <button id="clearBtn" class="button secondary" type="button">נקה</button>
+      </div>
+
+      <div id="status" class="status" aria-live="polite"></div>
+
+      <label for="outputText" class="label">תוצאה</label>
+      <textarea id="outputText" class="textarea" rows="6" readonly placeholder="כאן תופיע התוצאה..."></textarea>
+
+      <footer class="footer">
+        <small>
+          שים לב: זהו כלי עזר לניסוח בלבד ואינו ייעוץ משפטי.
+        </small>
+      </footer>
+    </main>
+
+    <script src="/app.js"></script>
+  </body>
+</html>
